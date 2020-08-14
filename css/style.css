@@ -3,39 +3,256 @@
     padding: 0;
 }
 
-
-header{
-    background-color:#0a746e;
-    width: 100%;
-    height: 200px;
+body{
+    font-family: 'Red Rose', cursive;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-div#card-pessoal{
-    margin-top: 140px;
-    background-color: darkkhaki;
+header{
+    position: absolute;
+    background-color: rgb(13, 71, 59);
+    width: 100%;
+    height: 200px;
+   
+}
+
+main{
+    position: relative;
+    /*background-color: aqua;*/
     width: 900px;
+    height: 1000px;
+    float: left;
+}
+
+.card{
+    background-color: rgb(117, 228, 182);
+    width: 900px;
+    box-shadow: 3px 3px 15px rgba(0,0,0.25);
+    margin-bottom: 50px;
+}
+
+div#imagem{
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    background-image: url(../img/me.jpg.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+div#card-pessoal{
+    position: relative;
+    margin-top: 20px;
     height: 350px;
 }
 
-h1#nome{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
+div#card-pessoal span{
     position: absolute;
-    margin-top: 40px;
-    margin-left: -340px;
+    color: black;
+    margin-left: 320px;
+    font-size: 18px;
 }
 
-span#profissao{
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
+.card-titulo{
     position: absolute;
-    margin-top: 90px;
-    margin-left: -405px;
+    margin-top: 30px;
+    margin-left: 85px;
+    font-size: 28px !important;
+    font-weight: bold;
+    color: black;
+}
+
+div#card-pessoal span#subtitulo {
+    margin-top: 45px;
+    color:black;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+div#linha{
+    width: 455px;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 320px;
+    border: 1px solid #a8a8a8;
+}
+
+div#card-pessoal footer{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 300px;
+    width: 600px;
+    height: 60px;
+    align-items: center;
+    background: black;
+    bottom: 0px;
+}
+
+div#card-pessoal footer a{
+    width: 120px;
+    color: rgb(117, 228, 182) ;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+
+div#card-sobre{
+    height: 260px;
+}
+
+div#card-habilidade{
+    height: 437px;
+}
+
+.linha{
+    position: absolute;
+    border: 1px solid #a8a8a8;
+    width: 730px;
+    margin-left: 85px;
+    margin-top: 75px;
+}
+
+.text-card{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: lighter;
+}
+
+div#card-sobre p{
+    position: absolute;
+    width: 730px;
+    margin-left: 85px;
+    margin-top: 100px;
+}
+
+div#card-formacao{
+    height: 705px;
+}
+
+div#card-formacao ul{
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 100px;
+}
+
+div#card-formacao ul li{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+div#card-formacao ul span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div#card-formacao ul p{
+    width: 670px;
+    margin-bottom: 30px;
+}
+
+h1#nome{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 5%
+}
+
+h2#profissao{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+div#main{
+    position: absolute;
+    margin-left: 85px;
+    margin-top: 100px;
+    width: 730px;
+    height: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 20px;
+}
+
+.coluna-50{
+    width: 50%;
+    height: 80px;
+}
+
+div#main span{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.status-100{
+    width: 236px;
+    height: 15px;
+    border-radius: 22px;
+    background-color: rgb(115, 112, 117);
+    margin-top: 10px;
+}
+
+div#meu-status-org{
+    width: calc((236px*80)/100);
+    border-radius: 22px;
+    height: 15px;
+    background-color: rgb(13, 71, 59);
+}
+
+div#meu-status-perc{
+    width: calc((236px*30)/100);
+    border-radius: 22px;
+    height: 15px;
+    background-color: rgb(13, 71, 59);
+}
+
+div#meu-status-comu{
+    width: calc((236px*30)/100);
+    border-radius: 22px;
+    height: 15px;
+    background-color: rgb(13, 71, 59);
+}
+
+div#meu-status-pers{
+    width: calc((236px*95)/100);
+    border-radius: 22px;
+    height: 15px;
+    background-color: rgb(13, 71, 59);
+}
+
+div#meu-status-dedic{
+    width: calc((236px*85)/100);
+    border-radius: 22px;
+    height: 15px;
+    background-color: rgb(13, 71, 59);
+}
+
+div#meu-status-pac{
+    width: calc((236px*20)/100);
+    border-radius: 22px;
+    height: 15px;
+    background-color: rgb(13, 71, 59);
+}
+
+div#meu-status-conc{
+    width: calc((236px*50)/100);
+    border-radius: 22px;
+    height: 15px;
+    background-color: rgb(13, 71, 59);
+}
+
+div#meu-status-resp{
+    width: calc((236px*85)/100);
+    border-radius: 22px;
+    height: 15px;
+    background-color: rgb(13, 71, 59);
 }
